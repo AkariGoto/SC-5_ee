@@ -33,21 +33,21 @@ int main(void)
   
       //Pressureの文字があったら、11文字目から17文字目までを抜き出して使う
       if(strstr(line1,kensaku1) != NULL){
-          for(i>11;i<=17;i++){
+          for(i=11;i<=17;i++){
           line2[i-11] = line1[i];
           line2[6] = c;
           }
       }
       //Altitudeの文字があったら、11文字目から16文字目までを抜き出して使う
       else if(strstr(line1,kensaku2) != NULL){
-          for(i>11;i<=16;i++){
+          for(i=11;i<=16;i++){
           line2[i-11] = line1[i];
           line2[5] = c;
           }
       }
       //Pressure at...の文字があったら、36文字目から42文字目までを抜き出して使う
       else if(strstr(line1,kensaku3) != NULL){
-          for(i>36;i<=42;i++){
+          for(i=36;i<=42;i++){
           line2[i-36] = line1[i];
           line2[6] = c;
           }
